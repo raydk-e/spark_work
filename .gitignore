@@ -1,0 +1,22 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Spark/Hadoop logs and temp files
+.spark-warehouse/
+metastore_db/
+derby.log
+checkpoint/
+
+# Local Data (Crucial for Data Architects)
+*.db
+*.duckdb
+*.parquet
+/tmp/
+data_stg/
