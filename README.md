@@ -1,4 +1,4 @@
-DataExp: Personal Expense ETL Pipeline 📊
+# DataExp: Personal Expense ETL Pipeline 📊
 Postgres ➔ PySpark ➔ DuckDB (WSL2 Environment)
 This project implements a local Medallion Architecture to transform raw transactional data from an OLTP source (PostgreSQL) into a high-performance OLAP warehouse (DuckDB) using Apache Spark as the transformation engine.
 
