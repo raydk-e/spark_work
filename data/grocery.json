@@ -1,0 +1,47 @@
+[
+	{	"item_name" : "biscuit",
+		"brand": "sobisco",
+		"type": "salted",
+		"weight": 200,
+		"volume" : "NA",
+		"unit" : "g",
+		"price" : 39,
+		"currency" : "inr"
+	},
+	{	"item_name" : "hair-oil",
+		"brand": "balaji",
+		"type": "coconut",
+		"weight": "NA",
+		"volume" : 200,
+		"unit" : "ml",
+		"price" : 43,
+		"currency" : "inr"
+	},
+	{	"item_name" : "bread",
+		"brand": "moreish",
+		"type": "atta",
+		"weight": 300,
+		"volume" : "NA",
+		"unit" : "g",
+		"price" : 55,
+		"currency" : "inr"
+	},
+	{	"item_name" : "mixture",
+		"brand": "mohan",
+		"type": "khata-mitha",
+		"weight": 500,
+		"volume" : "NA",
+		"unit" : "g",
+		"price" : 90,
+		"currency" : "inr"
+	},
+	{	"item_name" : "cake",
+		"brand": "monginis",
+		"type": "mix-fruit",
+		"weight": 200,
+		"volume" : "NA",
+		"unit" : "g",
+		"price" : 30,
+		"currency" : "inr"
+	}
+]
