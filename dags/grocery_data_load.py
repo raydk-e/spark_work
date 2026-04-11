@@ -1,7 +1,8 @@
-"""DAG to trigger Spark job on WSL via SSH."""
-from airflow import DAG
+"""DAG for DataExp grocery data load."""
+from datetime import datetime  # 1. Standard library (FIRST)
+
+from airflow import DAG        # 2. Third-party library (SECOND)
 from airflow.providers.ssh.operators.ssh import SSHOperator
-from datetime import datetime
 
 with DAG(
     'grocery_data_load',

@@ -22,6 +22,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
         pip install pylint apache-airflow apache-airflow-providers-ssh
+        pip install pandas sqlalchemy psycopg2-binary apache-airflow
         # CRITICAL: This installs your Spark/Airflow/Pandas libs
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 

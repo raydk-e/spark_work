@@ -9,6 +9,7 @@ disable=
     C0116, # missing-function-docstring
     W0718, # broad-exception-caught
     E0401  # import-error (we will fix this with requirements.txt)
+    C0411
 
 [BASIC]
 # This is the magic part.
