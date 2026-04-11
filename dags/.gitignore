@@ -1,0 +1,34 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+airflow_env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Spark/Hadoop logs and temp files
+.spark-warehouse/
+metastore_db/
+derby.log
+checkpoint/
+
+# Local Data (Crucial for Data Architects)
+*.db
+*.duckdb
+*.parquet
+/tmp/
+data_stg/
+
+# Ignore the virtual environment
+airflow_env/
+
+# Ignore Airflow logs and database
+logs/
+airflow.db
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
