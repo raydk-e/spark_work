@@ -9,7 +9,7 @@ with DAG(
     schedule = None,
     catchup = False
 ) as dag:
-    
+
     run_spark = SSHOperator(
         task_id = 'run_spark',
         ssh_conn_id =  'wsl_ssh_conn',
