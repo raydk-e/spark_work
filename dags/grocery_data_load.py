@@ -1,3 +1,4 @@
+"""DAG to trigger Spark job on WSL via SSH."""
 from airflow import DAG
 from airflow.providers.ssh.operators.ssh import SSHOperator
 from datetime import datetime
@@ -19,5 +20,6 @@ with DAG(
             --jars /home/deepak/spark_jars/postgresql-42.7.2.jar \
             --packages com.google.cloud.spark:spark-bigquery-with-dependencies_2.13:0.41.0 \
             /home/deepak/projects/sparkwork/spark_bq_json/pg_grocery_to_bq.py
-        '''
+        ''',
+        get_pty=True
     )
