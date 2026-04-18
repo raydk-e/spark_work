@@ -6,7 +6,7 @@ This module performs an ETL process that:
 2. Persists the raw JSON response to the local filesystem for auditability.
 3. Processes the data using PySpark to calculate a 'body_word_count' metric.
 4. Loads the transformed dataset into a PostgreSQL 'analytics' database.
-5. Verify
+
 
 Required Dependencies:
     - PySpark, Requests
