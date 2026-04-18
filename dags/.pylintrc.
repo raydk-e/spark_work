@@ -1,0 +1,18 @@
+[MASTER]
+# Ignore the logs directory so it doesn't slow down the check
+ignore=logs
+
+[MESSAGES CONTROL]
+# Disable the "Missing Docstring" and "Broad Exception" warnings for now
+disable=
+    C0114, # missing-module-docstring
+    C0116, # missing-function-docstring
+    W0718, # broad-exception-caught
+    E0401  # import-error (we will fix this with requirements.txt)
+    C0411
+
+[BASIC]
+# This is the magic part.
+# It tells Pylint that 'constants' (global variables)
+# should follow the same snake_case pattern as regular variables.
+const-rgx=[a-z_][a-z0-9_]{2,30}$
