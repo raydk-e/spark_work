@@ -1,3 +1,17 @@
+"""
+GoRest API Data Ingestion & Transformation Pipeline
+
+This module performs an ETL process that:
+1. Extracts posts data from the GoRest public API.
+2. Persists the raw JSON response to the local filesystem for auditability.
+3. Processes the data using PySpark to calculate a 'body_word_count' metric.
+4. Loads the transformed dataset into a PostgreSQL 'analytics' database.
+
+
+Required Dependencies:
+    - PySpark, Requests
+    - PostgreSQL JDBC Driver (postgresql-42.7.2.jar)
+"""
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import udf, col
 from pyspark.sql.types import ArrayType, FloatType

@@ -20,3 +20,10 @@ checkpoint/
 *.parquet
 /tmp/
 data_stg/
+
+# Credentials and Secrets (High Priority)
+/keys/
+*.json
+*.pem
+*.key
+.aider*
