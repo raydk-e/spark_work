@@ -1,3 +1,4 @@
+"""Module for processing DataExp expense data using Pandas."""
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, year, date_format, dayofmonth
 import os
@@ -26,7 +27,7 @@ df_transformed = df_source.filter(col("expense_debit").isNotNull() & (col("expen
     .withColumn("month", date_format(col("date"), "MMMM"))\
     .withColumn("day",dayofmonth(col("date")))\
     .select("year", "month", "day", "description", "category","expense_debit")\
-    
+
 temp_path = "/tmp/transformed_expenses"
 df_transformed.write.mode("overwrite").parquet(temp_path)
 
